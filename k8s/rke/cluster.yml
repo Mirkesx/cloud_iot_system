@@ -1,0 +1,15 @@
+nodes:
+  - address: 192.168.56.2
+    ssh_key_path: ~/.vagrant.d/insecure_private_key
+    user: vagrant
+    role:
+      - controlplane
+      - etcd
+  - address: 192.168.56.3
+    ssh_key_path: ~/.vagrant.d/insecure_private_key
+    user: vagrant
+    role:
+      - worker
+ingress:
+  provider: nginx
+  network_mode: hostNetwork

@@ -1,0 +1,8 @@
+export CLUSTER_NAME=kops-test.k8s.local
+export KOPS_STATE_STORE=s3://domussapiens-cluster-kops-state-store
+export MASTER_SIZE="t3a.small"
+export NODE_SIZE="t3a.small"
+export ZONES="eu-central-1a,eu-central-1b,eu-central-1c"
+export MASTER_ZONES="eu-central-1a,eu-central-1b,eu-central-1c"
+export SSH_KEY="~/.ssh/id_rsa_domussapiens_cluster.pub"
+export EDITOR=nano

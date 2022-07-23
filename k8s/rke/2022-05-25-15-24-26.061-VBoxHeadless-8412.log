@@ -1,0 +1,12 @@
+Log created: 2022-05-25T15:24:26.610821000Z
+Process ID:  8412 (0x20dc)
+Parent PID:  2206 (0x89e)
+Executable:  /usr/lib/virtualbox/VBoxHeadless
+Arg[0]: /usr/lib/virtualbox/VBoxHeadless
+Arg[1]: --comment
+Arg[2]: rke_node2_1653483231533_82854
+Arg[3]: --startvm
+Arg[4]: 233629ae-93e3-423e-a58f-6d614d9a8e07
+Arg[5]: --vrde
+Arg[6]: config
+AddRef: illegal refcnt=3221225469 state=2

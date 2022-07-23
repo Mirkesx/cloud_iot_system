@@ -1,0 +1,30 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  # General Vagrant VM configuration.
+  config.vm.box = "generic/ubuntu2004"
+  config.vm.synced_folder ".", "/vagrant", disabled: true
+  config.ssh.insert_key = false
+  config.ssh.private_key_path = "~/.vagrant.d/insecure_private_key"
+  #config.vm.provision :shell, path: "bootstrap.sh"
+  config.vm.provision "file", source: "./edge", destination: "edge"
+  config.vm.provider :virtualbox do |v|
+    v.memory = 1024
+    v.linked_clone = true
+  end
+
+  # Application server 1.
+  config.vm.define "node1" do |node|
+    config.vm.provision "shell", path: "bootstrap.sh"
+    node.vm.network "private_network", ip: "192.168.56.2"
+  end
+
+  # # Application server 2.
+  config.vm.define "node2" do |node|
+    config.vm.provision "shell", path: "bootstrap.sh"
+    node.vm.network "private_network", ip: "192.168.56.3"
+  end
+end

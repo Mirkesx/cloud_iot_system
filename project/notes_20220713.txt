@@ -1,0 +1,21 @@
+Un repo per tipo di Lambda
+Un repo per il client
+Client su S3
+
+Una pipeline per ogni lambda/client
+
+
+Repo sul github
+Registrazione su cognito è un plus affidandomi alla key di api gateway per differenziare
+
+Consiglio:
+Il client può essere semplice
+Anche le function possono essere molto semplici
+Focalizzati sull'architettura
+
+
+Relazione (7-10 pagine)
+	- Architettura target (diagramma)
+	- Chiarisci quante pipeline e dove
+	- Passi per il deployment (ok screenshot con documentazione)
+	- Funzionalità descritta come proof of concept
