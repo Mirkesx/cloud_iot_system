@@ -19,3 +19,25 @@ Relazione (7-10 pagine)
 	- Chiarisci quante pipeline e dove
 	- Passi per il deployment (ok screenshot con documentazione)
 	- Funzionalità descritta come proof of concept
+
+
+GitHub Code
+iot-cloud-systems-project
+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
+
+
+
+DynamoDB tables:
+- Products
+- Orders
+
+
+
+admin
+VN8P>Kqb
+
+
+- bootstrap -> CAPABILITY_AUTO_EXPAND (nested templates)
+- lambdas -> CAPABILITY_NAMED_IAM (role creation)
+- api gateway -> CAPABILITY_NAMED_IAM (role creation)
+- cloudfront -> https://d2gmpx1q7e23ri.cloudfront.net
